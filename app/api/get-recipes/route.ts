@@ -3,7 +3,7 @@ import { GoogleGenAI, Type } from "@google/genai"
 import { NextResponse } from "next/server"
 
 const ai = new GoogleGenAI({
-  apiKey: process.env.GEMINI_API_KEY!, // Never hardcode in prod!
+  apiKey: process.env.GEMINI_API_KEY!, 
 })
 
 export async function POST(req: Request) {
