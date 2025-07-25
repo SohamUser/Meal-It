@@ -39,7 +39,7 @@ const FormSection = () => {
       const newArr = JSON.parse(data)
       
       
-      setRecipes(newArr) // This should be an array of recipes
+      setRecipes(newArr) 
     } catch (error) {
       console.error("Failed to fetch recipes:", error)
     } finally {
