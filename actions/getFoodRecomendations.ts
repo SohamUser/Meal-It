@@ -1,6 +1,6 @@
 import { GoogleGenAI, Type } from "@google/genai";
 
-const ai = new GoogleGenAI({apiKey: "AIzaSyBujvhIATzafxCIjwWBhrifqDCg1BKDjjU"})
+const ai = new GoogleGenAI({apiKey: process.env.GEMINI_API_KEY!})
 
 export default async function getFoodRecom(items : string[]){
     const resp = await ai.models.generateContent({
